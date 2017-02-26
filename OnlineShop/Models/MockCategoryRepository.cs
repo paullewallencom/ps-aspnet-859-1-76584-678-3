@@ -6,8 +6,22 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Models
 {
-    public class MockCategoryRepository
+    public class MockCategoryRepository: ICategoryRepository
     {
-        
+        public IEnumerable<Category> Categories
+        {
+            get
+            {
+                return new List<Category>
+                {
+                    new Category {CategoryId=1, CategoryName="Fruit pies", Description="All-fruity pies" },
+                    new Category {CategoryId=1, CategoryName="Cheese cakes", Description="Cheesy all the way" },
+                    new Category {CategoryId=1, CategoryName="Seasonal pies", Description="Get in the mood for seconds" }
+
+
+                }
+            }
+        }
+
     }
 }
