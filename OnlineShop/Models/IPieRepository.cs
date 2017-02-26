@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Models
 {
-    interface IPieRepository
+    public interface IPieRepository
     {
+        IEnumerable<Pie> Pies { get; }
+        IEnumerable<Pie> PiesOfTheWeek { get; }
+        Pie GetPieById(int pieId);
     }
 }
