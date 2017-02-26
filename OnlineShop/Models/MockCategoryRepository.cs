@@ -19,7 +19,7 @@ namespace OnlineShop.Models
                     new Category {CategoryId=1, CategoryName="Seasonal pies", Description="Get in the mood for seconds" }
 
 
-                }
+                };
             }
         }
 

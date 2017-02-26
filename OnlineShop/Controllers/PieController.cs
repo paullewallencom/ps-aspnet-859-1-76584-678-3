@@ -16,7 +16,13 @@ namespace OnlineShop.Controllers
 
         public PieController(IPieRepository pieRepository, ICategoryRepository categoryRepository)
         {
+            _pieRepository = pieRepository;
+            _categoryRepository = categoryRepository;
+        }
 
+        public ViewResult List()
+        {
+            return View(_pieRepository.Pies);
         }
     }
 }
