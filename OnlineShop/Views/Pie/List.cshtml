@@ -1,5 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<OnlineShop.Models.Pie>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 initial-scale=1" />
+    <title>Paul's Pie Shop</title>
+</head>
+<body>
+    @foreach (var pie in Model)
+    {
+        <div>
+            <h2>@pie.Name</h2>
+            <h3>@pie.Price.ToString("c")</h3>
+            <h4>@pie.Category.CategoryName</h4>
+        </div>
+    }
+</body>
+</html>
