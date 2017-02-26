@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace OnlineShop.Models
 {
-    interface ICategoryRepository
+    public interface ICategoryRepository
     {
+        IEnumerable<Category> Categories { get; }
     }
 }
