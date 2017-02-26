@@ -27,7 +27,7 @@ namespace OnlineShop.Controllers
             piesListViewModel.Pies = _pieRepository.Pies;
 
             piesListViewModel.CurrentCategory = "Cheese cakes";
-            return View(_pieRepository.Pies);
+            return View(piesListViewModel);
         }
     }
 }
