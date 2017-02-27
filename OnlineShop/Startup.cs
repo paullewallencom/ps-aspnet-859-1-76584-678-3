@@ -32,8 +32,8 @@ namespace OnlineShop
         {
             services.AddDbContext<AppDbContext>(options =>
                             options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
-            services.AddTransient<ICategoryRepository, MockCategoryRepository>();
-            services.AddTransient<IPieRepository, MockPieRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IPieRepository, PieRepository>();
             services.AddMvc();
         }
 
