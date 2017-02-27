@@ -48,6 +48,8 @@ namespace OnlineShop
 
             app.UseMvcWithDefaultRoute();
 
+            DbInitializer.Seed(app);
+
 
         }
     }
