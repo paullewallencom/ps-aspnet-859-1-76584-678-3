@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\bin\Debug\netcoreapp1.0\OnlineShop.dll"
+"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\bin\OnlineShop\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\bin\OnlineShop\bin\Debug\netcoreapp1.0\OnlineShop.dll"
 -r:"C:\Users\PabloPicante\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.1\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\PabloPicante\.nuget\packages\Microsoft.AspNetCore.Authorization\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\PabloPicante\.nuget\packages\Microsoft.AspNetCore.Cors\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Cors.dll"
@@ -193,7 +193,7 @@
 -r:"C:\Users\PabloPicante\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\PabloPicante\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\PabloPicante\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\obj\Debug\netcoreapp1.0\OnlineShopdotnet-compile.deps.json",OnlineShop.deps.json
+-resource:"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\bin\OnlineShop\obj\Debug\netcoreapp1.0\OnlineShopdotnet-compile.deps.json",OnlineShop.deps.json
 "C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Program.cs"
 "C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Startup.cs"
 "C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Controllers\PieController.cs"
