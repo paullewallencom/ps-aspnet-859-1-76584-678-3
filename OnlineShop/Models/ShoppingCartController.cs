@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OnlineShop.Models;
+using OnlineShop.ViewModels;
 
 namespace OnlineShop.Models
 {
@@ -21,7 +22,8 @@ namespace OnlineShop.Models
 
         public ViewResult Index()
         {
-            var items = _shoppingCart.GetShoppingCartItems();
+
+            var items = _shoppingCart.GetShopppingCartItems();
             _shoppingCart.ShoppingCartItems = items;
 
             var shoppingCartViewModel = new ShoppingCartViewModel
