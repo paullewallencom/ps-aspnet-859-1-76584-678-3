@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using OnlineShop.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,7 +62,7 @@ namespace OnlineShop.Models
         {
             var shoppingCartItem =
                 _appDbContext.ShoppingCartItems.SingleOrDefault(
-                    s => s.Pie.PieId == pie, PieId && s.ShoppingCartId == ShoppingCartId);
+                    s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCartId);
 
             var localAmount = 0;
 
@@ -82,7 +86,7 @@ namespace OnlineShop.Models
 
         public List<ShoppingCartItem> GetShopppingCartItems()
         {
-            return ShoppingCartItem ??
+            return ShoppingCartItems ??
                 (ShoppingCartItems =
                     _appDbContext.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
                         .Include(s => s.Pie)
@@ -93,7 +97,7 @@ namespace OnlineShop.Models
         {
             var cartItems = _appDbContext
                 .ShoppingCartItems
-                .Where(cart => cart.ShoppingCartItems == ShoppingCartId);
+                .Where(cart => cart.ShoppingCartId == ShoppingCartId);
 
             _appDbContext.ShoppingCartItems.RemoveRange(cartItems);
 
@@ -102,8 +106,9 @@ namespace OnlineShop.Models
 
         public decimal GetShoppingCartTotal()
         {
-            var total = _appDbContext.ShoppingCartItems.Where(c => c.ShoppingCartItems == ShoppingCartId)
+            var total = _appDbContext.ShoppingCartItems.Where(c => c.ShoppingCartId == ShoppingCartId)
                 .Select(c => c.Pie.Price * c.Amount).Sum();
+            return total;
         }
     }
 }
