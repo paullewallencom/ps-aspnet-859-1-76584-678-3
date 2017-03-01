@@ -22,7 +22,7 @@ namespace OnlineShop.Models
 
         public List<ShoppingCartItem> ShoppingCartItems { get; set; }
 
-        public static ShoppingCart GetStart(IServiceProvider services)
+        public static ShoppingCart GetCart(IServiceProvider services)
         {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?
                 .HttpContext.Session;
@@ -39,7 +39,7 @@ namespace OnlineShop.Models
         {
             var shoppingCartItem =
                     _appDbContext.ShoppingCartItems.SingleOrDefault(
-                        s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCart);
+                        s => s.Pie.PieId == pie.PieId && s.ShoppingCartId == ShoppingCartId);
 
             if (shoppingCartItem == null)
             {
@@ -84,7 +84,7 @@ namespace OnlineShop.Models
             return localAmount;
         }
 
-        public List<ShoppingCartItem> GetShopppingCartItems()
+        public List<ShoppingCartItem> GetShoppingCartItems()
         {
             return ShoppingCartItems ??
                 (ShoppingCartItems =

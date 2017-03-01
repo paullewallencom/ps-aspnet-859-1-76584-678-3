@@ -1,4 +1,5 @@
 ﻿@model HomeViewModel
+
 @await Html.PartialAsync("Carousel")
 
 <h2>Pies of the week</h2>
@@ -8,7 +9,7 @@
 
     @foreach (var pie in Model.PiesOfTheWeek)
     {
-        @Html.Partial("PieOfTheWeeksSummary", pie)
+        @Html.Partial("PieOfTheWeekSummary", pie)
 
     }
 

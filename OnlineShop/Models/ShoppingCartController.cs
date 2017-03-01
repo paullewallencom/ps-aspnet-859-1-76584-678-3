@@ -23,7 +23,7 @@ namespace OnlineShop.Models
         public ViewResult Index()
         {
 
-            var items = _shoppingCart.GetShopppingCartItems();
+            var items = _shoppingCart.GetShoppingCartItems();
             _shoppingCart.ShoppingCartItems = items;
 
             var shoppingCartViewModel = new ShoppingCartViewModel

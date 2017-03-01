@@ -201,6 +201,8 @@
 --resource:"C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\obj\Debug\netcoreapp1.0\OnlineShopdotnet-compile.deps.json",OnlineShop.deps.json
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Program.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Startup.cs
+C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Components\ShoppingCartSummary.cs
+C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Controllers\HomeController.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Controllers\PieController.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Migrations\20170227010026_Initial.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Migrations\20170227010026_Initial.Designer.cs
@@ -218,5 +220,8 @@ C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\MockPieRepository.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\Pie.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\PieRepository.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\ShoppingCart.cs
+C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\ShoppingCartController.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\Models\ShoppingCartItem.cs
+C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\ViewModels\HomeViewModel.cs
 C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\ViewModels\PiesListViewModel.cs
+C:\github\ps-aspnet-859-1-76584-678-3\OnlineShop\ViewModels\ShoppingCartViewModel.cs
